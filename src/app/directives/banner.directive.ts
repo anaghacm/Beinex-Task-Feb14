@@ -7,6 +7,7 @@ export class BannerDirective  implements OnInit{
 
   constructor(private element:ElementRef) { 
     this.element.nativeElement.parentNode.style.paddingBottom = '0';
+    
   }
   ngOnInit(): void {
     let image = this.element.nativeElement.firstChild;
@@ -18,6 +19,7 @@ export class BannerDirective  implements OnInit{
     image.style.width = '100%';
     image.style.paddingBottom = '220px';
     image.style.paddingTop = '220px';
+    image.style.boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px';
 
     let text = this.element.nativeElement.lastChild;
     text.style.display = 'flex';
