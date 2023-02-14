@@ -1,0 +1,38 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+
+.aboutme-module{
+    .content-name{
+        padding: $spacer-0 $spacer-2;
+    }
+    .content-greetings{
+        font-family: 'Aladin', cursive;
+        padding: $spacer-0 $spacer-2;
+        font-size: $font-lg;
+    }
+    .btn-aboutme{
+        background-color: #0008;
+        color: $color-white;
+        border-radius: 0;
+        padding: $spacer-0 $spacer-2;
+        margin-left: $spacer-2;
+
+        &:hover{
+            background-color: $color-black;
+           
+        }
+    }
+}
+
+@include tablet{
+    .aboutme-module{
+        .container{
+            flex-direction: column;
+        }
+        .btn-aboutme{
+            margin-left: $spacer-0;
+            margin-top: $spacer-2;
+        }
+    }
+}

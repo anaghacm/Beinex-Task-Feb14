@@ -1,0 +1,17 @@
+@import '../../../assets/scss/variables';
+
+.smlinks-module{
+    .text{
+        padding: $spacer-0 $spacer-3;
+    }
+    .smlink{
+        padding: $spacer-0 $spacer-1;
+        color: #0005;
+        transition: all 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+            color: $color-black;
+        }
+    }
+}

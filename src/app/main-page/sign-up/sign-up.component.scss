@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.signup-module {
+    margin-top: 20px;
+    .text {
+        padding: $spacer-0 $spacer-2;
+    }
+
+    .input-field {
+        border: none;
+        padding: $spacer-1 $spacer-md;
+        width: 300px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .btn-enter {
+        font-size: $font-logo-name;
+        height: 48px;
+        background-color: $color-white;
+        border-radius: 0;
+
+        &:focus {
+            border: none;
+        }
+    }
+}
+
+@include tablet{
+    .signup-module{
+        .container{
+            flex-wrap: wrap;
+        }
+        
+    }
+}
